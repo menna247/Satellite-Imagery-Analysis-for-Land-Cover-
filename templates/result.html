@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Mask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1527195375283-e28c0cfbe6f2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(140, 177, 137);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            background-color: #065e289a;
+            color: white;
+            margin: 0;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
+        }
+        p {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            background-color: #065e289a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #065e289a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Predicted Mask</h1>
+        <img src="{{ url_for('static', filename='predicted_mask.png') }}" alt="Predicted Mask">
+        <p>Predicted Land Type: {{ predicted_land_type }}</p>
+        <br>
+        <a href="/">Upload Another Image</a>
+    </div>
+</body>
+</html>

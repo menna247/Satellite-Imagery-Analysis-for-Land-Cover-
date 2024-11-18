@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Cover Classification - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1704825606367-dc1832821dae?');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .navbar {
+            width: 1496px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .navbar .navbar-title {
+            color: white;
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+            font-size: 1.5em;
+            width: 531.5px;
+            height: 27.2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar .button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .navbar .button:hover {
+            background-color: white;
+            color: black;
+        }
+        a.button {
+            padding: 10px;
+        }
+        .navbar .button:first-child {
+            width: 50px;
+            height: 15px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+        }
+        .navbar .button:last-child {
+            width: 80px;
+            height: 15px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 900px;
+            margin-top: 80px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #065e289a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .feature {
+            max-width: 300px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="button">Home</a>
+        <div class="navbar-title">Land Cover Classification</div>
+        <a href="/about" class="button">About Us</a>
+    </div>
+    <div class="container">
+        <h1>Welcome to Land Cover Classification</h1>
+        <p>
+            Explore our AI-powered platform designed to predict and classify different land cover types
+            from satellite imagery. Our tool utilizes advanced image segmentation techniques to provide
+            accurate mask predictions for urban land, agricultural areas, forests, water bodies, and more.
+        </p>
+        <a href="/upload" class="button">Get Started</a>
+        <div class="features">
+            <div class="feature">
+                <h3>AI-Driven Predictions</h3>
+                <p>Leverage our deep learning model to analyze satellite images and predict land cover types with precision.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy Image Upload</h3>
+                <p>Simply upload your images and receive mask predictions and classification results in a user-friendly format.</p>
+            </div>
+            <div class="feature">
+                <h3>Detailed Class Mapping</h3>
+                <p>View and analyze segmented masks that display multiple land categories, each marked with distinct colors.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
